@@ -1,11 +1,15 @@
-
 ---
 title: "Documentation"
-linkTitle: "Documentation"
-weight: 20
-menu:
-  main:
-    weight: 20
+
+cascade:
+  - type: "blog"
+    # set to false to include a blog section in the section nav along with docs
+    toc_root: true
+    _target:
+      path: "/blog/**"
+  - type: "docs"
+    _target:
+      path: "/**"
 ---
 
 {{% pageinfo %}}
